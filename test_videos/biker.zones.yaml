@@ -1,0 +1,5 @@
+zones:
+  - name: "Main Crossing"
+    type: "line"
+    geometry: [[0.546875, 0.625], [0.9375, 0.416667]]
+    trigger_classes: ["car", "truck", "bicycle", "person"]

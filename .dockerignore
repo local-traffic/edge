@@ -1,0 +1,67 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+venv2/
+env/
+.venv/
+ENV/
+
+# Virtual environments
+venv*
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Test files
+test_*.py
+tests/
+
+# Documentation
+*.md
+!README.md
+
+# Models (will be downloaded in container)
+*.pt
+*.onnx
+*.engine
+
+# Recordings and videos
+recordings/
+videos/
+*.mp4
+*.avi
+*.mkv
+
+# Logs
+*.log
+logs/
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Claude
+.claude/

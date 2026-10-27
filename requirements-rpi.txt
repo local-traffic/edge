@@ -1,0 +1,21 @@
+# Requirements for Raspberry Pi (Raspberry Pi OS Trixie, Python 3.13)
+#
+# Install as much as possible from apt (prebuilt, numpy 2.x matches hailo-all).
+# pyinfra installs them automatically, see SYSTEM_PYTHON_PACKAGES in pyinfra/tasks/deploy_tasks.py.
+# Manual equivalent:
+#   sudo apt install -y hailo-all python3-numpy python3-opencv python3-picamera2 python3-libcamera \
+#       python3-pyaudio python3-psycopg2 python3-yaml python3-dotenv python3-psutil python3-flask \
+#       python3-flask-cors python3-shapely python3-scipy python3-matplotlib python3-pandas \
+#       python3-sklearn python3-requests python3-pil python3-loguru python3-git python3-regex \
+#       python3-torch python3-torchvision
+#   python3 -m venv --system-site-packages venv
+#   venv/bin/pip install -r requirements-rpi.txt
+#   venv/bin/pip uninstall -y opencv-python opencv-python-headless  # keep GStreamer-enabled system cv2
+#
+# Do NOT pin numpy<2: hailo-all on Trixie is built against the system numpy 2.x.
+
+# Not packaged in Debian
+ultralytics
+boxmot
+supervision>=0.27.0,<0.31  # 0.31 removed sv.ByteTrack
+rfdetr

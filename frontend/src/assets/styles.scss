@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'primeicons/primeicons.css';
+@use './layout/layout.scss';
+@use './demo/demo.scss';
+
+
+/* Custom CSS variables for app-specific values */
+:root {
+  /* Zone colors (for use in canvas drawing - not Tailwind classes) */
+  --zone-normal: #00d4ff;
+  --zone-editing: #ffaa44;
+  --zone-selected: #44ff44;
+}
+
+/* Dark mode zone colors */
+.dark-mode {
+  /* Zone colors remain the same in dark mode for visibility */
+  --zone-normal: #00d4ff;
+  --zone-editing: #ffaa44;
+  --zone-selected: #44ff44;
+}
